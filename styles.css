@@ -10,6 +10,8 @@ body {
     background-color: #FAC601;
 }
 
+
+
 .logo {
     width: 125px;
     height: 98px;
@@ -18,6 +20,10 @@ body {
 
 .sandwich, .logo-text {
     display: none;
+}
+
+.full-cart {
+    display: flex;
 }
 
 .cart {
