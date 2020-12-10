@@ -74,7 +74,7 @@ form {
     margin-left: 5%;
 }
 
-th & td {
+th, td {
     padding-left: 12px;
 }
 
