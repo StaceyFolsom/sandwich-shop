@@ -17,25 +17,35 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <header>
         <section class="header">
-        <img class="logo" src="images/HTMlogo.png">
+            <img class="logo" src="images/HTMlogo.png">
             <img class="cart" src="/images/cart.gif">
         </section>
-        <section class="order-form">
-            <form>
-
-            </form>
-        </section>
-        <section class="buttons">
-            <button class="add">Add and Order More</button>
-            <button class="checkout">I'm Hungry, Let's Check Out</button>
-        </section>
-
-
-        <script src="" async defer></script>
+    </header>
+    <body>
+        <table class="orderSummaryTable">
+            <tr class="summaryTableHeaders">
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>BLT - bacon, lettuce, tomato w/ NO MAYO - ew</td>
+                <td>5</td>
+                <td>5.01</td>
+            </tr>
+            <!-- <tr>add dynamic elements</tr> -->
+        </table>
+        <div class="paymentDetailLabels">
+            <label>Subtotal $</label><br>
+            <label>Tax $</label><br>
+            <label>Total $</label>
+        </div>
+        <div>
+            <button class="proceedPayment">Proceed to Payment</button>
+        </div>
     </body>
+
+    <script src="" async defer></script>
 </html>
