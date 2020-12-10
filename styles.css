@@ -10,8 +10,6 @@ body {
     background-color: #FAC601;
 }
 
-
-
 .logo {
     width: 125px;
     height: 98px;
@@ -53,7 +51,6 @@ button {
     width: 200px;
 }
 
-
 .sandwich-qty{
     max-width:90%;
     height:100%; 
@@ -61,12 +58,13 @@ button {
     color:black; 
     padding:20px;
     font-size: 10em;
-    
 }
 
 form {
 	width: 300px;
-	margin: 0 auto;}
+    margin: 0 auto;
+}
+
 .orderSummaryTable {
     table-layout: auto;
     width: 90%;
