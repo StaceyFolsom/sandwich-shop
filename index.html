@@ -10,7 +10,6 @@
     <title>Hold The Mayo Sandwich Shop</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -37,18 +36,151 @@
         <img class="logo-text" src="images/logotext.png" />
       </div>
       <div class="full-cart">
-      <div id="itm-count"></div>
-      <img class="cart" src="/images/cart.png" />
+        <div id="itm-count"></div>
+        <img class="cart" src="/images/cart.png" />
       </div>
     </section>
     <section class="order-form">
-      <form></form>
+      <form>
+        <div class="sandwiches">
+          <h1 class="text-center">SANDWICHES</h1>
+          <label
+            >BLT - bacon,lettuce, tomato.......$5.00
+            <select name="blt-qty" id="blt-qty">
+              <optgroup>
+                <option class="blt" value="1">1</option>
+                <option class="blt" value="2">2</option>
+                <option class="blt" value="3">3</option>
+                <option class="blt" value="4">4</option>
+                <option class="blt" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Caprese - mozzeralla,tomato,basil.......$7.50
+            <select name="cap-qty" id="cap-qty">
+              <optgroup>
+                <option class="caprese" value="1">1</option>
+                <option class="caprese" value="2">2</option>
+                <option class="caprese" value="3">3</option>
+                <option class="caprese" value="4">4</option>
+                <option class="caprese" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >PBJ - peanut butter & jelly.......$3.50
+            <select name="pbj-qty" id="pbj-qty">
+              <optgroup>
+                <option class="pbj" value="1">1</option>
+                <option class="pbj" value="2">2</option>
+                <option class="pbj" value="3">3</option>
+                <option class="pbj" value="4">4</option>
+                <option class="pbj" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Turkey Club - turkey, swiss,lettuce,tomato.......$8.50
+            <select name="tc-qty" id="tc-qty">
+              <optgroup>
+                <option class="tc" value="1">1</option>
+                <option class="tc" value="2">2</option>
+                <option class="tc" value="3">3</option>
+                <option class="tc" value="4">4</option>
+                <option class="tc" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+        <div class="Sides">
+          <h1 class="text-center">Sides</h1>
+          <label
+            >Ruffles.......$2.50
+            <select name="chips-qty" id="chips-qty">
+              <optgroup>
+                <option class="chips" value="1">1</option>
+                <option class="chips" value="2">2</option>
+                <option class="chips" value="3">3</option>
+                <option class="chips" value="4">4</option>
+                <option class="chips" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Chocolate Chip Cookie.......$2.50
+            <select name="cookie-qty" id="cookie-qty">
+              <optgroup>
+                <option class="cookie" value="1">1</option>
+                <option class="cookie" value="2">2</option>
+                <option class="cookie" value="3">3</option>
+                <option class="cookie" value="4">4</option>
+                <option class="chips" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+
+        <div class="drinks">
+          <h1 class="text-center">Drinks</h1>
+          <label
+            >Coke.......$2.50
+            <select name="coke-qty" id="coke-qty">
+              <optgroup>
+                <option class="coke" value="1">1</option>
+                <option class="coke" value="2">2</option>
+                <option class="coke" value="3">3</option>
+                <option class="coke" value="4">4</option>
+                <option class="coke" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+
+          <label
+            >Diet Coke.......$3.50
+            <select name="diet-qty" id="diet-qty">
+              <optgroup>
+                <option class="diet" value="1">1</option>
+                <option class="diet" value="2">2</option>
+                <option class="diet" value="3">3</option>
+                <option class="diet" value="4">4</option>
+                <option class="diet" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+
+          <label
+            >Sprite.......$2.00
+            <select name="sprite-qty" id="sprite-qty">
+              <optgroup>
+                <option class="sprite" value="1">1</option>
+                <option class="sprite" value="2">2</option>
+                <option class="sprite" value="3">3</option>
+                <option class="sprite" value="4">4</option>
+                <option class="sprite" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Lemonade.......$2.25
+            <select name="lemonade-qty" id="sprite-qty">
+              <optgroup>
+                <option class="lemonade" value="1">1</option>
+                <option class="lemonade" value="2">2</option>
+                <option class="lemonade" value="3">3</option>
+                <option class="lemonade" value="4">4</option>
+                <option class="lemonade" value="5">5</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+      </form>
     </section>
     <section class="buttons">
       <button class="add">Add and Order More</button>
       <button class="checkout">I'm Hungry, Let's Check Out</button>
     </section>
 
-    <script src="" async defer></script>
+    <script src="scripts.js" async defer></script>
   </body>
 </html>

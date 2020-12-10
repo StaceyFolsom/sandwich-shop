@@ -53,6 +53,49 @@ button {
     width: 200px;
 }
 
+
+.sandwich-qty{
+    max-width:90%;
+    height:100%; 
+    background-color:white; 
+    color:black; 
+    padding:20px;
+    font-size: 10em;
+    
+}
+
+form {
+	width: 300px;
+	margin: 0 auto;}
+.orderSummaryTable {
+    table-layout: auto;
+    width: 90%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+th & td {
+    padding-left: 12px;
+}
+
+th {
+    font-size: 14pt;
+    font-weight: 18px;
+}
+
+.proceedPayment {
+    display: block;
+    margin: 0 auto;
+}
+
+.paymentDetailLabels {
+    text-align: right;
+    margin-right: 15%;
+    margin-top: 5%;
+    font-size: 14pt;
+    font-weight: 18px;
+}
+
 .hidden {
     display: none;
 }
