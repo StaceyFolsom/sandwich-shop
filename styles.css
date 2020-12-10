@@ -11,13 +11,21 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 125px;
+    height: 98px;
+    padding: 13px;
+}
+
+.sandwich, .logo-text {
+    display: none;
 }
 
 .cart {
+    justify-self: flex-end;
     align-self: center;
     padding-right: 20px;
     height: 40px;
+    width: 45px;
 }
 
 .buttons {
@@ -68,5 +76,33 @@ th {
     font-weight: 18px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
+
+    .logo {
+        display: none;
+    }
+    
+    .wide-logo {
+        display: flex;
+        justify-content: column;
+    }
+
+    .sandwich {
+        display: block;
+        width: 150px;
+        height: 94px;
+        padding: 15px;
+    }
+
+    .logo-text {
+        display: block;
+        align-self: center;
+        width: 250px;
+        height: 78px;
+    }
+
 }
