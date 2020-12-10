@@ -39,5 +39,21 @@ button {
     width: 200px;
 }
 
+
+.sandwich-qty{
+    max-width:90%;
+    height:100%; 
+    background-color:white; 
+    color:black; 
+    padding:20px;
+    font-size: 10em;
+    
+}
+
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
 }
