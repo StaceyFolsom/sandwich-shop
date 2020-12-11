@@ -60,10 +60,40 @@ button {
     font-size: 10em;
 }
 
+h1 {
+	color : #000000;
+	text-align : center;
+	font-family: "SIMPSON";
+}
+
 form {
 	width: 300px;
     margin: 0 auto;
 }
+
+label {
+ display: inline-block;
+ width: 500px;
+ text-align: left;
+ padding: 10px 10px;
+ font-size: 20px;
+}​
+
+optgroup { font-size:100%; } 
+.dropdown {
+    width: 80px;
+    height: 25px;
+    border: 1px solid #999;
+    font-size: 15px;
+    color: #1c87c9;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+  }
+/**.dropdown{
+    width: 50px;
+    margin-left: 30px;
+}**/
 
 .orderSummaryTable {
     table-layout: auto;
