@@ -18,32 +18,32 @@ const drinks = [
 ]
 
 // Jamie - .order-form is a class not an ID so I think the .getElementById won't work
-let orderForm = document.getElementById('.order-form'); //change 'order-form' to '.order-form'
-orderForm.addEventListener('submit', function(event) //submit might change to a different button
-{
-const data = new FormData(orderForm);
-let numberOfItems = data.get('numberOfItems');
-let price= data.get('price');
+// let orderForm = document.getElementById('.order-form'); //change 'order-form' to '.order-form'
+// orderForm.addEventListener('submit', function(event) //submit might change to a different button
+// {
+// const data = new FormData(orderForm);
+// let numberOfItems = data.get('numberOfItems');
+// let price= data.get('price');
 
-})
+// })
 
 
 //looping and adding items
-for(let i=0; i < numberOfItems; i++){
-let newOrder=document.createElement('div');
-newName.classList.add(name); //changed item to name
-newPrice.classList.add(price);
-}
+// for(let i=0; i < numberOfItems; i++){
+// let newOrder=document.createElement('div');
+// newName.classList.add(name); //changed item to name
+// newPrice.classList.add(price);
+// }
 // calculating subtotal
-function getSubtotal(quantity, price){
-    // let quantity = document.querySelectorAll('.sandwich-qty'); not sure if this needs to be declared
-    menuArray.forEach(function(menu) {
+// function getSubtotal(quantity, price){
+//     // let quantity = document.querySelectorAll('.sandwich-qty'); not sure if this needs to be declared
+//     menuArray.forEach(function(menu) {
 
-        let subtotal= (price * quantity);
+//         let subtotal= (price * quantity);
         
-    });
-    return subtotal;
-}
+//     });
+//     return subtotal;
+// }
 // let elements = document.querySelectorAll('.sandwich-qty');
 
 // Event listener for click on Add button
@@ -57,3 +57,10 @@ const submitButton = document.querySelector(".checkout");
 submitButton.addEventListener("click", function(event) {
     console.log(event);
 });
+
+// Displays number of items in cart
+const itemCount = document.querySelector("#itm-count");
+console.log(itemCount);
+
+let cartNum = 4; // number for testing; should be fed from Jamie's calculation of submitted items
+itemCount.innerText = cartNum;
