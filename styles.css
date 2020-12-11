@@ -9,6 +9,13 @@ body {
     margin-bottom: 20px;
     background-color: #FAC601;
 }
+ 
+.sandwiches > div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .logo {
     width: 125px;
