@@ -10,8 +10,6 @@ body {
     background-color: #FAC601;
 }
 
-
-
 .logo {
     width: 125px;
     height: 98px;
@@ -52,7 +50,6 @@ button {
     margin: 0 5px;
     width: 200px;
 }
-
 
 .sandwich-qty{
     max-width:90%;
