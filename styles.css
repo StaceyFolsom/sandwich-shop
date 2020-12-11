@@ -1,13 +1,17 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    background-color: #FAC601;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #fac601;
+}
+
+h2 {
+    font-size: x-large;
 }
  
 .sandwiches > div{
@@ -18,146 +22,142 @@ body {
 }
 
 .logo {
-    width: 125px;
-    height: 98px;
-    padding: 13px;
+  width: 125px;
+  height: 98px;
+  padding: 13px;
 }
 
 .sandwich, .logo-text {
-    display: none;
+  display: none;
 }
 
 .full-cart {
-    display: flex;
+  display: flex;
 }
 
 .cart {
-    justify-self: flex-end;
-    align-self: center;
-    padding-right: 20px;
-    height: 40px;
-    width: 45px;
+  justify-self: flex-end;
+  align-self: center;
+  padding-right: 20px;
+  height: 40px;
+  width: 45px;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 button {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: large;
-    background-color: #FAC601;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 0 5px;
-    width: 200px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: large;
+  background-color: #fac601;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 5px;
+  width: 200px;
 }
 
-.sandwich-qty{
-    max-width:90%;
-    height:100%; 
-    background-color:white; 
-    color:black; 
-    padding:20px;
-    font-size: 10em;
-}
-
-h1 {
-	color : #000000;
-	text-align : center;
-	font-family: "SIMPSON";
+.sandwich-qty {
+  max-width: 90%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 10em;
 }
 
 form {
-	width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
 label {
- display: inline-block;
- width: 500px;
- text-align: left;
- padding: 10px 10px;
- font-size: 20px;
-}​
+  display: inline-block;
+  width: 500px;
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 20px;
+}
 
-optgroup { font-size:100%; } 
+​optgroup {
+  font-size: 100%;
+}
+
 .dropdown {
-    width: 80px;
-    height: 25px;
-    border: 1px solid #999;
-    font-size: 15px;
-    color: #1c87c9;
-    background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 4px 4px #ccc;
-  }
+  width: 80px;
+  height: 25px;
+  border: 1px solid #999;
+  font-size: 15px;
+  color: #1c87c9;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+}
 /**.dropdown{
     width: 50px;
     margin-left: 30px;
 }**/
 
 .orderSummaryTable {
-    table-layout: auto;
-    width: 90%;
-    text-align: left;
-    margin-left: 5%;
+  table-layout: auto;
+  width: 90%;
+  text-align: left;
+  margin-left: 5%;
 }
 
 th, td {
-    padding-left: 12px;
+  padding-left: 12px;
 }
 
 th {
-    font-size: 14pt;
-    font-weight: 18px;
+  font-size: 14pt;
+  font-weight: 18px;
 }
 
 .proceedPayment {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .paymentDetailLabels {
-    text-align: right;
-    margin-right: 15%;
-    margin-top: 5%;
-    font-size: 14pt;
-    font-weight: 18px;
+  text-align: right;
+  margin-right: 15%;
+  margin-top: 5%;
+  font-size: 14pt;
+  font-weight: 18px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
 
-    .logo {
-        display: none;
-    }
-    
-    .wide-logo {
-        display: flex;
-        justify-content: column;
-    }
+  .logo {
+    display: none;
+  }
 
-    .sandwich {
-        display: block;
-        width: 150px;
-        height: 94px;
-        padding: 15px;
-    }
+  .wide-logo {
+    display: flex;
+    justify-content: column;
+  }
 
-    .logo-text {
-        display: block;
-        align-self: center;
-        width: 250px;
-        height: 78px;
-    }
+  .sandwich {
+    display: block;
+    width: 150px;
+    height: 94px;
+    padding: 15px;
+  }
+
+  .logo-text {
+    display: block;
+    align-self: center;
+    width: 250px;
+    height: 78px;
+  }
 
 }

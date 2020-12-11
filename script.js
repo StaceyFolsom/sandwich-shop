@@ -1,5 +1,5 @@
 const sandwiches = [
-    { name: "BLT", description: "Bacon, lettucs, & tomato", price: 5.00},
+    { name: "BLT", description: "Bacon, lettuce, & tomato", price: 5.00},
     { name: "Caprese", description: "Mozzarella, tomato, & basil", price: 7.50},
     { name: "PBJ", description: "Peanut butter & jelly time!", price: 3.50},
     { name: "Turkey Club", description: "Turkey, swiss, lettuce, & tomato", price: 8.50},
@@ -13,10 +13,11 @@ const sides = [
 const drinks = [
     { name: "Cola", description: "You know the deal", price: 2.50},
     { name: "Diet Cola", description: "You on a diet?", price: 2.50},
-    { name: "Sprite", description: "Lemon-Lime greatness!", price: 2.50},
+    { name: "Sprite", description: "Lemon-lime greatness!", price: 2.50},
     { name: "Lemonade", description: "Fresh squeezed lemonade", price: 3.25},
 ]
 
+// Jamie - .order-form is a class not an ID so I think the .getElementById won't work
 let orderForm = document.getElementById('.order-form'); //change 'order-form' to '.order-form'
 orderForm.addEventListener('submit', function(event) //submit might change to a different button
 {
@@ -44,3 +45,15 @@ function getSubtotal(quantity, price){
     return subtotal;
 }
 // let elements = document.querySelectorAll('.sandwich-qty');
+
+// Event listener for click on Add button
+const addButton = document.querySelector(".add");
+addButton.addEventListener("click", function(event) {
+    console.log(event);
+});
+
+// Event listener for click on Submit button
+const submitButton = document.querySelector(".checkout");
+submitButton.addEventListener("click", function(event) {
+    console.log(event);
+});
