@@ -10,48 +10,58 @@ body {
   background-color: #fac601;
 }
 
-h2 {
-    font-size: x-large;
-}
-
-.order-form img {
-    width: 150px;
-}
- 
-.sandwiches div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo {
-  width: 125px;
-  height: 98px;
-  padding: 13px;
-}
-
-.sandwich, .logo-text {
-  display: none;
-}
-
-.full-cart {
-  display: flex;
-}
-
-#itm-count {
+    width: 125px;
+    height: 98px;
+    padding: 13px;
+  }
+  
+  .sandwich,
+  .logo-text {
+    display: none;
+  }
+  
+  .full-cart {
+    display: flex;
+  }
+  
+  #itm-count {
     position: absolute;
     margin-top: 24px;
     margin-left: 21px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 18pt;
+  }
+  
+  .cart {
+    align-self: center;
+    padding-right: 20px;
+    height: 40px;
+    width: 45px;
+  }
+
+h2 {
+  font-size: 20pt;
 }
 
-.cart {
-  align-self: center;
-  padding-right: 20px;
-  height: 40px;
-  width: 45px;
+.order-form img {
+  width: 150px;
+  margin: 0 15px 10px 0;
+}
+
+.sandwiches,
+.sides,
+.drinks {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  font-size: 14pt;
+  margin-bottom: 15px;
 }
 
 .buttons {
@@ -82,17 +92,14 @@ button {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
 }
 
-label {
-  display: inline-block;
-  width: 500px;
-  text-align: left;
-  padding: 10px 10px;
-  font-size: 20px;
+.item {
+  display: flex;
+  flex-direction: row;
 }
 
 .dropdown {
@@ -111,7 +118,8 @@ label {
   margin-left: 5%;
 }
 
-th, td {
+th,
+td {
   padding-left: 12px;
 }
 
@@ -138,7 +146,6 @@ th {
 }
 
 @media only screen and (min-width: 768px) {
-
   .logo {
     display: none;
   }
@@ -164,6 +171,5 @@ th {
 
   .order-form img {
     width: 300px;
-}
-
+  }
 }
