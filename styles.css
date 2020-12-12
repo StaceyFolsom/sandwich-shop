@@ -13,10 +13,14 @@ body {
 h2 {
     font-size: x-large;
 }
+
+.order-form img {
+    width: 150px;
+}
  
-.sandwiches > div{
-    display:flex;
-    flex-direction: column;
+.sandwiches div {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -78,8 +82,9 @@ button {
 }
 
 form {
-  width: 300px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
 }
 
 label {
@@ -90,24 +95,14 @@ label {
   font-size: 20px;
 }
 
-​optgroup {
-  font-size: 100%;
-}
-
 .dropdown {
-  width: 80px;
+  width: 40px;
   height: 25px;
   border: 1px solid #999;
   font-size: 15px;
-  color: #1c87c9;
   background-color: #eee;
-  border-radius: 5px;
-  box-shadow: 4px 4px #ccc;
+  margin-right: 5px;
 }
-/**.dropdown{
-    width: 50px;
-    margin-left: 30px;
-}**/
 
 .orderSummaryTable {
   table-layout: auto;
@@ -166,5 +161,9 @@ th {
     width: 250px;
     height: 78px;
   }
+
+  .order-form img {
+    width: 300px;
+}
 
 }
