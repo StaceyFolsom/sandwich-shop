@@ -73,20 +73,20 @@ const total= subtotal+tax;
 // const elements = document.querySelectorAll('.sandwich-qty');
 
 // Event listener for click on Add button
-const addButton = document.querySelector(".add");
-addButton.addEventListener("click", function(event) {
-    console.log(event);
-});
+// const addButton = document.querySelector(".add");
+// addButton.addEventListener("click", function(event) {
+//     console.log(event);
+// });
 
-// Event listener for click on Submit button
-const submitButton = document.querySelector(".checkout");
-submitButton.addEventListener("click", function(event) {
-    console.log(event);
-});
+// // Event listener for click on Submit button
+// const submitButton = document.querySelector(".checkout");
+// submitButton.addEventListener("click", function(event) {
+//     console.log(event);
+// });
 
 // Displays number of items in cart
 const itemCount = document.querySelector("#itm-count");
 console.log(itemCount);
 
-let cartNum = 3; // number for testing; should be fed from Jamie's calculation of submitted items
+let cartNum = 4; // number for testing; should be fed from Jamie's calculation of submitted items
 itemCount.innerText = cartNum;
