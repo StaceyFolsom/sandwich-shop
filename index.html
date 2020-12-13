@@ -49,7 +49,7 @@
           <div class="item">
             <img class="blt-img" src="images/blt.jpg" />
             <label>
-              <select class="dropdown" name="blt-qty" id="blt-qty">
+              <select class="dropdown" name="blt-qty" id="item-qty">
                 <optgroup>
                   <option class="blt" value="" selected disabled hidden>
                     0
@@ -68,7 +68,7 @@
           <div class="item">
             <img class="caprese-img" src="images/caprese.jpg" />
             <label>
-              <select class="dropdown" name="cap-qty" id="cap-qty">
+              <select class="dropdown" name="cap-qty" id="item-qty">
                 <optgroup>
                   <option class="caprese" value="" selected disabled hidden>
                     0
@@ -87,7 +87,7 @@
           <div class="item">
             <img class="pbj-img" src="images/pbj.jpg" />
             <label class="item-details">
-              <select class="dropdown" name="pbj-qty" id="pbj-qty">
+              <select class="dropdown" name="pbj-qty" id="item-qty">
                 <optgroup>
                   <option class="pbj" value="" selected disabled hidden>
                     0
@@ -107,7 +107,7 @@
           <div class="item">
             <img class="club-img" src="images/club.jpg" />
             <label>
-              <select class="dropdown" name="tc-qty" id="tc-qty">
+              <select class="dropdown" name="tc-qty" id="item-qty">
                 <optgroup>
                   <option class="tc" value="" selected disabled hidden>
                     0
@@ -130,7 +130,7 @@
           <div class="item">
             <img class="chips-img" src="images/chips.jpg" />
             <label>
-              <select class="dropdown" name="chips-qty" id="chips-qty">
+              <select class="dropdown" name="chips-qty" id="item-qty">
                 <optgroup>
                   <option class="chips" value="" selected disabled hidden>
                     0
@@ -150,7 +150,7 @@
           <div class="item">
             <img class="cookie-img" src="images/cookie.jpg" />
             <label>
-              <select class="dropdown" name="cookie-qty" id="cookie-qty">
+              <select class="dropdown" name="cookie-qty" id="item-qty">
                 <optgroup>
                   <option class="cookie" value="" selected disabled hidden>
                     0
@@ -174,7 +174,7 @@
           <div class="item">
             <img class="cola-img" src="images/cola.jpg" />
             <label>
-              <select class="dropdown" name="cola-qty" id="cola-qty">
+              <select class="dropdown" name="cola-qty" id="item-qty">
                 <optgroup>
                   <option class="cola" value="" selected disabled hidden>
                     0
@@ -193,7 +193,7 @@
           <div class="item">
             <img class="diet-img" src="images/diet.jpg" />
             <label>
-              <select class="dropdown" name="diet-qty" id="diet-qty">
+              <select class="dropdown" name="diet-qty" id="item-qty">
                 <optgroup>
                   <option class="diet" value="" selected disabled hidden>
                     0
@@ -212,7 +212,7 @@
           <div class="item">
             <img class="sprite-img" src="images/sprite.jpg" />
             <label>
-              <select class="dropdown" name="sprite-qty" id="sprite-qty">
+              <select class="dropdown" name="sprite-qty" id="item-qty">
                 <optgroup>
                   <option class="sprite" value="" selected disabled hidden>
                     0
@@ -231,7 +231,7 @@
           <div class="item">
             <img class="lemonade-img" src="images/lemonade.jpg" />
             <label>
-              <select class="dropdown" name="lemonade-qty" id="lemonade-qty">
+              <select class="dropdown" name="lemonade-qty" id="item-qty">
                 <optgroup>
                   <option class="lemonade" value="" selected disabled hidden>
                     0
@@ -252,7 +252,7 @@
     </section>
     <section class="buttons">
       <button class="add">Add and Order More</button>
-      <button class="checkout">I'm Hungry, Let's Check Out</button>
+      <button class="checkout" onclick="getSelectedItems()">I'm Hungry, Let's Check Out</button>
     </section>
     <script src="script.js" async defer></script>
   </body>

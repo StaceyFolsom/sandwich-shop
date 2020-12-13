@@ -1,21 +1,31 @@
-// const sandwiches = [
-//     { name: "BLT", description: "Bacon, consttucs, & tomato", price: 5.00},
-//     { name: "Caprese", description: "Mozzarella, tomato, & basil", price: 7.50},
-//     { name: "PBJ", description: "Peanut butter & jelly time!", price: 3.50},
-//     { name: "Turkey Club", description: "Turkey, swiss, consttuce, & tomato", price: 8.50},
-// ]
+const menuItems = [
+    { name: "BLT", group: "sandiwch", description: "Bacon, consttucs, & tomato", price: 5.00},
+    { name: "Caprese", group: "sandiwch", description: "Mozzarella, tomato, & basil", price: 7.50},
+    { name: "PBJ", group: "sandiwch", description: "Peanut butter & jelly time!", price: 3.50},
+    { name: "Turkey Club", group: "sandiwch", description: "Turkey, swiss, consttuce, & tomato", price: 8.50},
+    { name: "Chips", group: "sides", description: "Homemade kettle baked cajun seasoned chips - best in town!", price: 2.50},
+    { name: "Chocolate Chip Cookie", group: "sides", description: "Fresh chocolate chip cookies, as good as your mom makes", price: 2.50},
+    { name: "Cola", group: "drinks", description: "You know the deal", price: 2.50},
+    { name: "Diet Cola", group: "drinks", description: "You on a diet?", price: 2.50},
+    { name: "Sprite", group: "drinks", description: "Lemon-Lime greatness!", price: 2.50},
+    { name: "Lemonade", group: "drinks", description: "Fresh squeezed lemonade", price: 3.25},
+]
 
-// const sides = [
-//     { name: "Chips", description: "Homemade kettle baked cajun seasoned chips - best in town!", price: 2.50},
-//     { name: "Chocolate Chip Cookie", description: "Fresh chocolate chip cookies, as good as your mom makes", price: 2.50},
-// ]
+// function to loop through and provide menu selections
+function getSelectedItems () {
+    let orderMenuItems = menuItems;
+    let orderItems = [];
+    let itemQty = document.getElementsByClassName("dropdown");
+    for (let i = 0; i < itemQty.length; i++) {
+        let itemQtyNumber = itemQty[i].options[itemQty[i].selectedIndex].text;
+        if (itemQtyNumber > 0) {
+            orderItems += [orderMenuItems[i].name, orderMenuItems[i].description, orderMenuItems[i].price, itemQtyNumber];
+        }
+    }
+    return (orderItems);
+}
 
-// const drinks = [
-//     { name: "Cola", description: "You know the deal", price: 2.50},
-//     { name: "Diet Cola", description: "You on a diet?", price: 2.50},
-//     { name: "Sprite", description: "Lemon-Lime greatness!", price: 2.50},
-//     { name: "Lemonade", description: "Fresh squeezed lemonade", price: 3.25},
-// ]
+
 
 // const orderForm = document.getElementByClass('.order-form'); {//change 'order-form' to '.order-form'
 // orderForm.addEventListener('click', function(event){ //submit might change to a different button
@@ -23,15 +33,15 @@
 // const orderForm = document.getElementById('.order-form'); //change 'order-form' to '.order-form'
 // orderForm.addEventListener('add', function(event) //submit might change to a different button
 
-const addButton = document.querySelector(".add");
-addButton.addEventListener("click", function (event) {
-  console.log(event);
-});
+// const addButton = document.querySelector(".add");
+// addButton.addEventListener("click", function (event) {
+//   console.log(event);
+// });
 
-const submitButton = document.querySelector(".checkout");
-submitButton.addEventListener("click", function (event) {
-  console.log(event);
-});
+// const submitButton = document.querySelector(".checkout");
+// submitButton.addEventListener("click", function (event) {
+//   console.log(event);
+// });
 // {
 //   const data = new FormData(orderForm);
 
@@ -73,8 +83,8 @@ submitButton.addEventListener("click", function (event) {
 // const elements = document.querySelectorAll('.sandwich-qty');
 
 // Displays number of items in cart
-const itemCount = document.querySelector("#itm-count");
-console.log(itemCount);
+// const itemCount = document.querySelector("#itm-count");
+// console.log(itemCount);
 
-let cartNum = 4; // number for testing; should be fed from Jamie's calculation of submitted items
-itemCount.innerText = cartNum;
+// let cartNum = 4; // number for testing; should be fed from Jamie's calculation of submitted items
+// itemCount.innerText = cartNum;
