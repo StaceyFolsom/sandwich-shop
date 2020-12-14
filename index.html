@@ -36,160 +36,224 @@
         <img class="logo-text" src="images/logotext.png" />
       </div>
       <div class="full-cart">
-        <div id="itm-count"></div>
+        <div id="itm-count">
+            <span>{{Number of items shows here}}</span>
+        </div>
         <img class="cart" src="images/cart.png" />
       </div>
     </section>
     <section class="order-form">
-      <form>
+      <form> 
         <div class="sandwiches">
-          <h1 class="text-center">SANDWICHES</h1>
-          <div> <img class="blt-img" src="images/blt.jpg">
-          <label
-            >BLT - bacon,lettuce, tomato.......$5.00
-            <select class="dropdown" name="blt-qty" id="blt-qty">
-              <optgroup>
-                <option class="blt" value="1">1</option>
-                <option class="blt" value="2">2</option>
-                <option class="blt" value="3">3</option>
-                <option class="blt" value="4">4</option>
-                <option class="blt" value="5">5</option>
-              </optgroup>
-            </select>
-          </label></div>
-         <div><img class="caprese-img" src="images/caprese.jpg">
-          <label
-            >Caprese - mozzeralla,tomato,basil.......$7.50
-            <select class="dropdown" name="cap-qty" id="cap-qty">
-              <optgroup>
-                <option class="caprese" value="1">1</option>
-                <option class="caprese" value="2">2</option>
-                <option class="caprese" value="3">3</option>
-                <option class="caprese" value="4">4</option>
-                <option class="caprese" value="5">5</option>
-              </optgroup>
-            </select>
-          </label></div>
-          <div><img class="pbj-img" src="images/pbj.jpg">
-          <label
-            >PBJ - peanut butter & jelly.......$3.50
-            <select class="dropdown" name="pbj-qty" id="pbj-qty">
-              <optgroup>
-                <option class="pbj" value="1">1</option>
-                <option class="pbj" value="2">2</option>
-                <option class="pbj" value="3">3</option>
-                <option class="pbj" value="4">4</option>
-                <option class="pbj" value="5">5</option>
-              </optgroup>
-            </select>
-          </label></div>
-
-          <div><img class="pbj-img" src="images/pbj.jpg">
-          <label
-            >Turkey Club - turkey, swiss,lettuce,tomato.......$8.50
-            <select name="tc-qty" id="tc-qty">
-              <optgroup>
-                <option class="tc" value="1">1</option>
-                <option class="tc" value="2">2</option>
-                <option class="tc" value="3">3</option>
-                <option class="tc" value="4">4</option>
-                <option class="tc" value="5">5</option>
-              </optgroup>
-            </select>
-          </label></div>
+          <h2 class="text-center">SANDWICHES</h2>
+          <div class="item">
+            <img class="blt-img" src="images/blt.jpg" />
+            <label>
+              <select class="dropdown" name="blt-qty" id="item-qty">
+                <optgroup>
+                  <option class="blt" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="blt" value="1">1</option>
+                  <option class="blt" value="2">2</option>
+                  <option class="blt" value="3">3</option>
+                  <option class="blt" value="4">4</option>
+                  <option class="blt" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$5.00</div>
+              <div class="item-desc">BLT | Bacon, lettuce, & tomato</div>
+            </label>
+          </div>
+          <div class="item">
+            <img class="caprese-img" src="images/caprese.jpg" />
+            <label>
+              <select class="dropdown" name="cap-qty" id="item-qty">
+                <optgroup>
+                  <option class="caprese" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="caprese" value="1">1</option>
+                  <option class="caprese" value="2">2</option>
+                  <option class="caprese" value="3">3</option>
+                  <option class="caprese" value="4">4</option>
+                  <option class="caprese" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$7.50</div>
+              <div class="item-desc">Caprese | Mozzeralla, tomato, & basil</div>
+            </label>
+          </div>
+          <div class="item">
+            <img class="pbj-img" src="images/pbj.jpg" />
+            <label class="item-details">
+              <select class="dropdown" name="pbj-qty" id="item-qty">
+                <optgroup>
+                  <option class="pbj" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="pbj" value="1">1</option>
+                  <option class="pbj" value="2">2</option>
+                  <option class="pbj" value="3">3</option>
+                  <option class="pbj" value="4">4</option>
+                  <option class="pbj" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$3.50</div>
+              <div class="item-desc">PBJ | Peanut butter & jelly time!</div>
+            </label>
+          </div>
           
-          
+          <div class="item">
+            <img class="club-img" src="images/club.jpg" />
+            <label>
+              <select class="dropdown" name="tc-qty" id="item-qty">
+                <optgroup>
+                  <option class="tc" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="tc" value="1">1</option>
+                  <option class="tc" value="2">2</option>
+                  <option class="tc" value="3">3</option>
+                  <option class="tc" value="4">4</option>
+                  <option class="tc" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$8.50</div>
+              <div class="item-desc">Turkey Club | Turkey, swiss, lettuce, & tomato</div>
+            </label>
+          </div>
         </div>
-        <div class="Sides">
-          <h1 class="text-center">SIDES</h1>
-          <img class="chips-img" src="images/chips.jpg">
-          <label
-            >Chips.......$2.50
-            <select name="chips-qty" id="chips-qty">
-              <optgroup>
-                <option class="chips" value="1">1</option>
-                <option class="chips" value="2">2</option>
-                <option class="chips" value="3">3</option>
-                <option class="chips" value="4">4</option>
-                <option class="chips" value="5">5</option>
-              </optgroup>
-            </select>
-          </label>
-          <img class="cookie-img" src="images/cookie.jpg">
-          <label
-            >Chocolate Chip Cookie.......$2.50
-            <select name="cookie-qty" id="cookie-qty">
-              <optgroup>
-                <option class="cookie" value="1">1</option>
-                <option class="cookie" value="2">2</option>
-                <option class="cookie" value="3">3</option>
-                <option class="cookie" value="4">4</option>
-                <option class="chips" value="5">5</option>
-              </optgroup>
-            </select>
-          </label>
+
+        <div class="sides">
+          <h2 class="text-center">SIDES</h2>
+          <div class="item">
+            <img class="chips-img" src="images/chips.jpg" />
+            <label>
+              <select class="dropdown" name="chips-qty" id="item-qty">
+                <optgroup>
+                  <option class="chips" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="chips" value="1">1</option>
+                  <option class="chips" value="2">2</option>
+                  <option class="chips" value="3">3</option>
+                  <option class="chips" value="4">4</option>
+                  <option class="chips" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$2.50</div>
+              <div class="item-desc">Chips | Homemade kettle baked cajun seasoned chips - best in
+                town!</div>
+            </label>
+          </div>
+          <div class="item">
+            <img class="cookie-img" src="images/cookie.jpg" />
+            <label>
+              <select class="dropdown" name="cookie-qty" id="item-qty">
+                <optgroup>
+                  <option class="cookie" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="cookie" value="1">1</option>
+                  <option class="cookie" value="2">2</option>
+                  <option class="cookie" value="3">3</option>
+                  <option class="cookie" value="4">4</option>
+                  <option class="cookie" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$2.50</div>
+              <div class="item-desc">Chocolate Chip Cookie | Fresh chocolate chip cookies, as good as
+                your mom makes</div>
+            </label>
+          </div>
         </div>
 
         <div class="drinks">
-          <h1 class="text-center">DRINKS</h1>
-          <label
-            >Coke.......$2.50
-            <select name="coke-qty" id="coke-qty">
-              <optgroup>
-                <option class="coke" value="1">1</option>
-                <option class="coke" value="2">2</option>
-                <option class="coke" value="3">3</option>
-                <option class="coke" value="4">4</option>
-                <option class="coke" value="5">5</option>
-              </optgroup>
-            </select>
-          </label>
-
-          <label
-            >Diet Coke.......$3.50
-            <select name="diet-qty" id="diet-qty">
-              <optgroup>
-                <option class="diet" value="1">1</option>
-                <option class="diet" value="2">2</option>
-                <option class="diet" value="3">3</option>
-                <option class="diet" value="4">4</option>
-                <option class="diet" value="5">5</option>
-              </optgroup>
-            </select>
-          </label>
-
-          <label
-            >Sprite.......$2.00
-            <select name="sprite-qty" id="sprite-qty">
-              <optgroup>
-                <option class="sprite" value="1">1</option>
-                <option class="sprite" value="2">2</option>
-                <option class="sprite" value="3">3</option>
-                <option class="sprite" value="4">4</option>
-                <option class="sprite" value="5">5</option>
-              </optgroup>
-            </select>
-          </label>
-          <label
-            >Lemonade.......$2.25
-            <select name="lemonade-qty" id="sprite-qty">
-              <optgroup>
-                <option class="lemonade" value="1">1</option>
-                <option class="lemonade" value="2">2</option>
-                <option class="lemonade" value="3">3</option>
-                <option class="lemonade" value="4">4</option>
-                <option class="lemonade" value="5">5</option>
-              </optgroup>
-            </select>
-          </label>
+          <h2 class="text-center">DRINKS</h2>
+          <div class="item">
+            <img class="cola-img" src="images/cola.jpg" />
+            <label>
+              <select class="dropdown" name="cola-qty" id="item-qty">
+                <optgroup>
+                  <option class="cola" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="cola" value="1">1</option>
+                  <option class="cola" value="2">2</option>
+                  <option class="cola" value="3">3</option>
+                  <option class="cola" value="4">4</option>
+                  <option class="cola" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$2.50</div>
+              <div class="item-desc">Cola | You know the deal</div>
+            </label>
+          </div>
+          <div class="item">
+            <img class="diet-img" src="images/diet.jpg" />
+            <label>
+              <select class="dropdown" name="diet-qty" id="item-qty">
+                <optgroup>
+                  <option class="diet" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="diet" value="1">1</option>
+                  <option class="diet" value="2">2</option>
+                  <option class="diet" value="3">3</option>
+                  <option class="diet" value="4">4</option>
+                  <option class="diet" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$2.50</div>
+              <div class="item-desc">Diet Cola | You on a diet?</div>
+            </label>
+          </div>
+          <div class="item">
+            <img class="sprite-img" src="images/sprite.jpg" />
+            <label>
+              <select class="dropdown" name="sprite-qty" id="item-qty">
+                <optgroup>
+                  <option class="sprite" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="sprite" value="1">1</option>
+                  <option class="sprite" value="2">2</option>
+                  <option class="sprite" value="3">3</option>
+                  <option class="sprite" value="4">4</option>
+                  <option class="sprite" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$2.50</div>
+              <div class="item-desc">Sprite | Lemon-lime greatness!</div>
+            </label>
+          </div>
+          <div class="item">
+            <img class="lemonade-img" src="images/lemonade.jpg" />
+            <label>
+              <select class="dropdown" name="lemonade-qty" id="item-qty">
+                <optgroup>
+                  <option class="lemonade" value="" selected disabled hidden>
+                    0
+                  </option>
+                  <option class="lemonade" value="1">1</option>
+                  <option class="lemonade" value="2">2</option>
+                  <option class="lemonade" value="3">3</option>
+                  <option class="lemonade" value="4">4</option>
+                  <option class="lemonade" value="5">5</option>
+                </optgroup>
+              </select>
+              <div class ="price">$3.25</div>
+              <div class="item-desc">Lemonade | Fresh squeezed lemonade</div>
+            </label>
+          </div>
         </div>
       </form>
     </section>
     <section class="buttons">
       <button class="add">Add and Order More</button>
-      <button class="checkout">I'm Hungry, Let's Check Out</button>
+      <button class="checkout" onclick="getSelectedItems()">I'm Hungry, Let's Check Out</button>
     </section>
-
     <script src="script.js" async defer></script>
   </body>
 </html>

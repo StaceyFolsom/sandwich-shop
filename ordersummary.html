@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"/>
       </head>
+      <body>
       <section class="header">
         <img class="logo" src="images/htmlogo.png" />
         <div class="wide-logo">
@@ -23,11 +24,10 @@
           <img class="logo-text" src="images/logotext.png" />
         </div>
         <div class="full-cart">
-          <div id="itm-count"></div>
+          <div id="itm-count"><span class="numberOfItems">{{Number of items shows here}}</span></div>
           <img class="cart" src="images/cart.png" />
         </div>
       </section>
-    <body>
         <table class="orderSummaryTable">
             <tr class="summaryTableHeaders">
                 <th>Item</th>
@@ -50,6 +50,5 @@
             <button class="proceedPayment">Proceed to Payment</button>
         </div>
     </body>
-
-    <script src="" async defer></script>
+    <script src="script.js" async defer></script>
 </html>

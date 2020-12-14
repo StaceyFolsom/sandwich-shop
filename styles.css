@@ -1,163 +1,192 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.header {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .header {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin-bottom: 20px;
-    background-color: #FAC601;
-}
- 
-.sandwiches > div{
-    display:flex;
-    flex-direction: row;
-    align-items: float;
-    justify-content: space-between;
-}
-
-.logo {
+    background-color: #fac601;
+    width: 100vw;
+  }
+  
+  .logo {
     width: 125px;
     height: 98px;
     padding: 13px;
-}
-
-.sandwich, .logo-text {
+  }
+  
+  .sandwich,
+  .logo-text {
     display: none;
-}
-
-.full-cart {
+  }
+  
+  .full-cart {
     display: flex;
-}
-
-.cart {
-    justify-self: flex-end;
+    margin-right: 20px;
+  }
+  
+  #itm-count {
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 21px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18pt;
+  }
+  
+  .cart {
     align-self: center;
-    padding-right: 20px;
     height: 40px;
     width: 45px;
-}
+  }
+  
+  h2 {
+    font-size: 20pt;
+    font-style: comic sans;
+  }
+  
+  .order-form img {
+    width: 150px;
+    margin: 0 15px 10px 0;
+  }
+  
+  .sandwiches,
+  .sides,
+  .drinks {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    font-size: 14pt;
+    margin-bottom: 15px;
+  }
 
-.buttons {
+  .price,
+  .dropdown {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .price,
+  .item-desc{
+    font-weight: bold;
+  }
+  
+  .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
-    
-}
-
-button {
-    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  button {
+    font-family: "Bebas Neue", sans-serif;
     font-size: large;
-    background-color: #FAC601;
+    background-color: #fac601;
     border: none;
     border-radius: 4px;
     padding: 10px;
     margin: 0 5px;
     width: 200px;
-}
-
-.sandwich-qty{
-    max-width:90%;
-    height:100%; 
-    background-color:white; 
-    color:black; 
-    padding:20px;
+  }
+  
+  .sandwich-qty {
+    max-width: 90%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding: 20px;
     font-size: 10em;
-}
-
-h1 {
-	color : #000000;
-	text-align : center;
-	font-family: "SIMPSON";
-}
-
-form {
-	width: 300px;
-    margin: 0 auto;
-}
-
-label {
- display: inline-block;
- width: 500px;
- text-align: left;
- padding: 10px 10px;
- font-size: 20px;
-}​
-
-optgroup { font-size:100%; } 
-.dropdown {
-    width: 80px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+  }
+  
+ /* .item {
+    display: flex;
+    flex-direction: row;
+  }*/
+  
+  .dropdown {
+    width: 40px;
     height: 25px;
     border: 1px solid #999;
     font-size: 15px;
-    color: #1c87c9;
     background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 4px 4px #ccc;
+    margin-right: 5px;
   }
-/**.dropdown{
-    width: 50px;
-    margin-left: 30px;
-}**/
-
-.orderSummaryTable {
+  
+  .orderSummaryTable {
     table-layout: auto;
     width: 90%;
     text-align: left;
     margin-left: 5%;
-}
-
-th, td {
+  }
+  
+  th,
+  td {
     padding-left: 12px;
-}
-
-th {
+  }
+  
+  th {
     font-size: 14pt;
     font-weight: 18px;
-}
-
-.proceedPayment {
+  }
+  
+  .proceedPayment {
     display: block;
     margin: 0 auto;
-}
-
-.paymentDetailLabels {
+  }
+  
+  .paymentDetailLabels {
     text-align: right;
     margin-right: 15%;
     margin-top: 5%;
     font-size: 14pt;
     font-weight: 18px;
-}
-
-.hidden {
+  }
+  
+  .hidden {
     display: none;
-}
-
-@media only screen and (min-width: 768px) {
-
+  }
+  
+  @media only screen and (min-width: 768px) {
     .logo {
-        display: none;
+      display: none;
     }
-    
+  
     .wide-logo {
-        display: flex;
-        justify-content: column;
+      display: flex;
+      justify-content: column;
     }
-
+  
     .sandwich {
-        display: block;
-        width: 150px;
-        height: 94px;
-        padding: 15px;
+      display: block;
+      width: 150px;
+      height: 94px;
+      padding: 15px;
     }
-
+  
     .logo-text {
-        display: block;
-        align-self: center;
-        width: 250px;
-        height: 78px;
+      display: block;
+      align-self: center;
+      width: 250px;
+      height: 78px;
     }
-
-}
+  
+    form {
+        margin-left: 75px;
+    }
+  
+    .order-form img {
+      width: 300px;
+    }
+  }
