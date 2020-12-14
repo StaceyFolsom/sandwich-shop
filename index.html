@@ -30,20 +30,20 @@
       </p>
     <![endif]-->
     <section class="header">
-      <img class="logo" src="images/htmlogo.png" />
+      <a href="index.html"><img class="logo" src="images/htmlogo.png" /></a>
       <div class="wide-logo">
-        <img class="sandwich" src="images/sandwich.png" />
-        <img class="logo-text" src="images/logotext.png" />
+        <a href="index.html"><img class="sandwich" src="images/sandwich.png" /></a>
+        <a href="index.html"><img class="logo-text" src="images/logotext.png" /></a>
       </div>
       <div class="full-cart">
         <div id="itm-count">
-            <span>{{Number of items shows here}}</span>
+          <span>{{Number of items shows here}}</span>
         </div>
         <img class="cart" src="images/cart.png" />
       </div>
     </section>
     <section class="order-form">
-      <form> 
+      <form>
         <div class="sandwiches">
           <h2 class="text-center">SANDWICHES</h2>
           <div class="item">
@@ -61,7 +61,7 @@
                   <option class="blt" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$5.00</div>
+              <div class="price">$5.00</div>
               <div class="item-details">BLT | Bacon, lettuce, & tomato</div>
             </label>
           </div>
@@ -80,8 +80,10 @@
                   <option class="caprese" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$7.50</div>
-              <div class="item-details">Caprese | Mozzeralla, tomato, & basil</div>
+              <div class="price">$7.50</div>
+              <div class="item-details">
+                Caprese | Mozzeralla, tomato, & basil
+              </div>
             </label>
           </div>
           <div class="item">
@@ -99,7 +101,7 @@
                   <option class="pbj" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$3.50</div>
+              <div class="price">$3.50</div>
               <div class="item-desc">PBJ | Peanut butter & jelly time!</div>
             </label>
           </div>
@@ -119,8 +121,10 @@
                   <option class="tc" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$8.50</div>
-              <div class="item-desc">Turkey Club | Turkey, swiss, lettuce, & tomato</div>
+              <div class="price">$8.50</div>
+              <div class="item-desc">
+                Turkey Club | Turkey, swiss, lettuce, & tomato
+              </div>
             </label>
           </div>
         </div>
@@ -142,9 +146,11 @@
                   <option class="chips" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$2.50</div>
-              <div class="item-desc">Chips | Homemade kettle baked cajun seasoned chips - best in
-                town!</div>
+              <div class="price">$2.50</div>
+              <div class="item-desc">
+                Chips | Homemade kettle baked cajun seasoned chips - best in
+                town!
+              </div>
             </label>
           </div>
           <div class="item">
@@ -162,9 +168,11 @@
                   <option class="cookie" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$2.50</div>
-              <div class="item-desc">Chocolate Chip Cookie | Fresh chocolate chip cookies, as good as
-                your mom makes</div>
+              <div class="price">$2.50</div>
+              <div class="item-desc">
+                Chocolate Chip Cookie | Fresh chocolate chip cookies, as good as
+                your mom makes
+              </div>
             </label>
           </div>
         </div>
@@ -186,7 +194,7 @@
                   <option class="cola" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$2.50</div>
+              <div class="price">$2.50</div>
               <div class="item-desc">Cola | You know the deal</div>
             </label>
           </div>
@@ -205,7 +213,7 @@
                   <option class="diet" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$2.50</div>
+              <div class="price">$2.50</div>
               <div class="item-desc">Diet Cola | You on a diet?</div>
             </label>
           </div>
@@ -224,7 +232,7 @@
                   <option class="sprite" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$2.50</div>
+              <div class="price">$2.50</div>
               <div class="item-desc">Sprite | Lemon-lime greatness!</div>
             </label>
           </div>
@@ -243,7 +251,7 @@
                   <option class="lemonade" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$3.25</div>
+              <div class="price">$3.25</div>
               <div class="item-desc">Lemonade | Fresh squeezed lemonade</div>
             </label>
           </div>
@@ -252,7 +260,9 @@
     </section>
     <section class="buttons">
       <button class="add">Add and Order More</button>
-      <button class="checkout" onclick="getSelectedItems()">I'm Hungry, Let's Check Out</button>
+      <button class="checkout" onclick="getSelectedItems()">
+        I'm Hungry, Let's Check Out
+      </button>
     </section>
     <script src="script.js" async defer></script>
   </body>
