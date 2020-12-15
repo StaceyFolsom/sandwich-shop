@@ -28,8 +28,9 @@ function getSelectedItems () {
             totalQty += parseInt(itemQtyNumber); // Stacey
         }
         itemCount.innerText = totalQty;
+        
     }
-    console.log(totalQty); //Stacey
+    // window.location.href="ordersummary.html"; // Playing with navigating to a new page with JS
     return (orderItems);
 }
 
