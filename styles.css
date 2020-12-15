@@ -101,36 +101,6 @@ form {
   margin-right: 5px;
 }
 
-.orderSummaryTable {
-  table-layout: auto;
-  width: 90%;
-  text-align: left;
-  margin-left: 5%;
-}
-
-th,
-td {
-  padding-left: 12px;
-}
-
-th {
-  font-size: 14pt;
-  font-weight: 18px;
-}
-
-.proceedPayment {
-  display: block;
-  margin: 0 auto;
-}
-
-.paymentDetailLabels {
-  text-align: right;
-  margin-right: 15%;
-  margin-top: 5%;
-  font-size: 14pt;
-  font-weight: 18px;
-}
-
 .hidden {
   display: none;
 }

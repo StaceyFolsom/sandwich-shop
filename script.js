@@ -38,18 +38,19 @@ let orderItems = [];
         let itemQtyNumber = itemQty[i].options[itemQty[i].selectedIndex].text;
         if (itemQtyNumber > 0){
         const summaryDiv = document.createElement('div');
+        const h2 = document.createElement('h2');
+        h2.innerText = "Order Summary";
+        //h2.classList.add('summary');
+        summaryDiv.append(h2);
+        //summaryDiv.classList.add('h2');
+        //summaryDiv.innerText = "Order Summary";
         summaryDiv.classList.add('Item');
-        //coinDiv.style.backgroundColor = coinColour;
-        //coinDiv.className = 'circles'+index;
-        summaryDiv.innerHTML = orderMenuItems[i].name;
+        summaryDiv.innerHTML += orderMenuItems[i].name;
         summaryDiv.classList.add('Quantity');
         summaryDiv.innerHTML += itemQtyNumber;
         summaryDiv.classList.add('Price');
         summaryDiv.innerHTML += itemQtyNumber * orderMenuItems[i].price;
-
-    
-
-        //document.body.appendChild(coinDiv);
+         
         document.querySelector(".summary").appendChild(summaryDiv);
         }
   
