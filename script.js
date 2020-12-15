@@ -1,8 +1,8 @@
 const menuItems = [
-    { name: "BLT", group: "sandiwch", description: "Bacon, consttucs, & tomato", price: 5.00},
-    { name: "Caprese", group: "sandiwch", description: "Mozzarella, tomato, & basil", price: 7.50},
-    { name: "PBJ", group: "sandiwch", description: "Peanut butter & jelly time!", price: 3.50},
-    { name: "Turkey Club", group: "sandiwch", description: "Turkey, swiss, consttuce, & tomato", price: 8.50},
+    { name: "BLT", group: "sandwich", description: "Bacon, consttucs, & tomato", price: 5.00},
+    { name: "Caprese", group: "sandwich", description: "Mozzarella, tomato, & basil", price: 7.50},
+    { name: "PBJ", group: "sandwich", description: "Peanut butter & jelly time!", price: 3.50},
+    { name: "Turkey Club", group: "sandwich", description: "Turkey, swiss, lettuce, & tomato", price: 8.50},
     { name: "Chips", group: "sides", description: "Homemade kettle baked cajun seasoned chips - best in town!", price: 2.50},
     { name: "Chocolate Chip Cookie", group: "sides", description: "Fresh chocolate chip cookies, as good as your mom makes", price: 2.50},
     { name: "Cola", group: "drinks", description: "You know the deal", price: 2.50},
@@ -30,11 +30,8 @@ function getSelectedItems () {
         itemCount.innerText = totalQty;
     }
     console.log(totalQty); //Stacey
-    window.location.href="ordersummary.html";
     return (orderItems);
 }
-
-
 
 
 // const orderForm = document.getElementByClass('.order-form'); {//change 'order-form' to '.order-form'
@@ -91,10 +88,3 @@ function getSelectedItems () {
 //     return subtotal;
 // }
 // const elements = document.querySelectorAll('.sandwich-qty');
-
-// Displays number of items in cart
-// const itemCount = document.querySelector("#itm-count");
-// console.log(itemCount);
-
-// let cartNum = 4; // number for testing; should be fed from Jamie's calculation of submitted items
-// itemCount.innerText = cartNum;
