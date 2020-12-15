@@ -86,7 +86,8 @@ button {
   font-size: 10em;
 }
 
-form {
+/* Changed form to .order here and added class in index to separate styles for payment form */
+.order, .pay {
   display: flex;
   flex-direction: column;
   margin: 10px 25px;
@@ -96,9 +97,56 @@ form {
   width: 45px;
   height: 25px;
   border: 1px solid #999;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   background-color: #eee;
   margin-right: 5px;
+}
+
+.dropdown-wide {
+  width: 80px;
+  height: 25px;
+  border: 1px solid #999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  background-color: #eee;
+  margin-right: 5px;
+}
+
+.pay div {
+  margin-bottom: 10px;
+}
+
+#cardNumber {
+  width: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+#cvv, #cashAmount {
+  width: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+#payment-type {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#payment-type label {
+  margin-right: 25px;
+  align-self: baseline;
+}
+
+#payment-type input {
+  margin-right: 8px;
+  align-self: baseline;
+}
+
+.form-group {
+  font-size: 12pt;
 }
 
 .orderSummaryTable {
@@ -189,12 +237,24 @@ th {
     height: 78px;
   }
 
-  form {
+  .order, .pay {
     margin-left: 75px;
   }
 
   .order-form img {
     width: 300px;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    font-size: 14pt;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    font-size: 14pt;
   }
 
   /* .logo {

@@ -32,8 +32,12 @@
     <section class="header">
       <!-- <a href="index.html"><img class="logo" src="images/htmlogo.png" /></a> -->
       <div class="wide-logo">
-        <a href="index.html"><img class="sandwich" src="images/sandwich.png" /></a>
-        <a href="index.html"><img class="logo-text" src="images/logotext.png" /></a>
+        <a href="index.html"
+          ><img class="sandwich" src="images/sandwich.png"
+        /></a>
+        <a href="index.html"
+          ><img class="logo-text" src="images/logotext.png"
+        /></a>
       </div>
       <!-- <div class="full-cart">
         <div id="itm-count">
@@ -43,9 +47,9 @@
       </div> -->
     </section>
     <section class="order-form">
-      <form>
+      <form class="order">
         <div class="sandwiches">
-          <h2 class="text-center">SANDWICHES</h2>
+          <h2>SANDWICHES</h2>
           <div class="item">
             <img class="blt-img" src="images/blt.jpg" />
             <label>
@@ -61,7 +65,7 @@
                   <option class="blt" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$5.00</div>
+              <div class="price">$5.00</div>
               <div class="item-desc">BLT | Bacon, lettuce, & tomato</div>
             </label>
           </div>
@@ -80,7 +84,7 @@
                   <option class="caprese" value="5">5</option>
                 </optgroup>
               </select>
-              <div class ="price">$7.50</div>
+              <div class="price">$7.50</div>
               <div class="item-desc">Caprese | Mozzeralla, tomato, & basil</div>
             </label>
           </div>
@@ -103,7 +107,7 @@
               <div class="item-desc">PBJ | Peanut butter & jelly time!</div>
             </label>
           </div>
-          
+
           <div class="item">
             <img class="club-img" src="images/club.jpg" />
             <label>
@@ -128,7 +132,7 @@
         </div>
 
         <div class="sides">
-          <h2 class="text-center">SIDES</h2>
+          <h2>SIDES</h2>
           <div class="item">
             <img class="chips-img" src="images/chips.jpg" />
             <label>
@@ -176,7 +180,7 @@
         </div>
 
         <div class="drinks">
-          <h2 class="text-center">DRINKS</h2>
+          <h2>DRINKS</h2>
           <div class="item">
             <img class="cola-img" src="images/cola.jpg" />
             <label>
@@ -265,17 +269,56 @@
         I'm Hungry, Let's Check Out
       </button>
     </section> -->
-    <section class="summary">
-       
-
-       
-    </section>
+    <section class="summary"></section>
     <section class="payment">
-      
-
+      <form class="pay">
+        <h2>PAYMENT</h2>
+        <div class="form-group" id="payment-type">
+          <input type="radio" class="form-control" id="cc-pmt" name="pmt-type" value="credit" checked>
+          <label for="cc-pmt">Credit Card</label>
+          <input type="radio" class="form-control" id="cash-pmt" name="pmt-type" value="cash">
+          <label for="cash-pmt">Cash</label>
+        </div>  
+      <div class="form-group" id="card-number-field">
+          <label for="cardNumber">Card Number</label>
+          <input type="text" class="form-control" id="cardNumber">
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" class="form-control" id="cvv">
+    </div>
+      <div class="form-group" id="expiration-date">
+          <label>Expiration Date</label>
+          <select class="dropdown-wide">
+              <option value="01">January</option>
+              <option value="02">February </option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+          </select>
+          <select class="dropdown-wide">
+              <option value="20"> 2020</option>
+              <option value="21"> 2021</option>
+              <option value="22"> 2022</option>
+              <option value="23"> 2023</option>
+              <option value="24"> 2024</option>
+              <option value="25"> 2025</option>
+          </select>
+      </div>
+      <div class="form-group" id="cash-tendered">
+        <label for="cashAmount">Cash Payment Amount</label>
+        $ <input type="text" class="form-control" id="cashAmount">
+    </div>
+      </form>
     </section>
-    <section class="receipt">
-    </section>
+    <section class="receipt"></section>
 
     <script src="script.js" async defer></script>
   </body>
