@@ -11,6 +11,11 @@ const menuItems = [
     { name: "Lemonade", group: "drinks", description: "Fresh squeezed lemonade", price: 3.25},
 ]
 
+// Displays number of items in cart
+let totalQty = 0;
+const itemCount = document.querySelector("#itm-count");
+itemCount.innerText = totalQty;
+
 // function to loop through and provide menu selections
 function getSelectedItems () {
     let orderMenuItems = menuItems;
@@ -20,10 +25,15 @@ function getSelectedItems () {
         let itemQtyNumber = itemQty[i].options[itemQty[i].selectedIndex].text;
         if (itemQtyNumber > 0) {
             orderItems += [orderMenuItems[i].name, orderMenuItems[i].description, orderMenuItems[i].price, itemQtyNumber];
+            totalQty += parseInt(itemQtyNumber); // Stacey
         }
+        itemCount.innerText = totalQty;
     }
+    console.log(totalQty); //Stacey
+    window.location.href="ordersummary.html";
     return (orderItems);
 }
+
 
 
 
