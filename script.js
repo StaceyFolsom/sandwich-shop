@@ -12,13 +12,16 @@ const menuItems = [
 ]
 
 // Displays number of items in cart
-let totalQty = 0;
-const itemCount = document.querySelector("#itm-count");
-itemCount.innerText = totalQty;
+// let totalQty = 0;
+// const itemCount = document.querySelector("#itm-count");
+// itemCount.innerText = totalQty;
 
 // function to loop through and provide menu selections
 checkout.addEventListener('click',function(e){
-    e.preventDefault();
+    // toggle hiding the first section when submit is clicked  
+    const hideForm=document.querySelector(".order-form");
+    hideForm.classList.toggle("hidden");
+        e.preventDefault();
 let orderItems = [];
     let itemQty = document.getElementsByClassName("dropdown");
    // for (let i = 0; i < itemQty.length; i++) {

@@ -5,7 +5,7 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #fac601;
 }
 
@@ -26,8 +26,6 @@ h2 {
   align-items: flex-start;
   font-size: 12pt;
   margin-bottom: 15px;
-
-  /* height: 78px; Is this needed? It's throwing off the main page */
 }
 
 .order-form img {
@@ -43,46 +41,29 @@ h2 {
 }
 
 label {
-    display: flex;
-    flex-flow: column wrap;
-    /* font-size: 20px; */
-  }
-
-.logo {
-  width: 125px;
-  height: 98px;
-  margin: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  /* font-size: 20px; */
 }
 
-.sandwich,
+.wide-logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.sandwich {
+  display: block;
+  width: 100px;
+  height: 63px;
+  padding: 15px;
+}
+
 .logo-text {
-  display: none;
-}
-
-.full-cart {
-  display: flex;
-}
-
-#itm-count {
-  position: absolute;
-  margin-top: 24px;
-  margin-left: 21px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18pt;
-}
-
-.cart {
+  display: block;
   align-self: center;
-  padding-right: 20px;
-  height: 40px;
-  width: 45px;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px 0;
+  width: 200px;
+  height: 62px;
 }
 
 button {
@@ -92,7 +73,7 @@ button {
   border: none;
   border-radius: 4px;
   padding: 10px;
-  margin: 0 5px;
+  margin: 20px auto;
   width: 200px;
 }
 
@@ -108,11 +89,11 @@ button {
 form {
   display: flex;
   flex-direction: column;
-  margin: 10px 10px;
+  margin: 10px 25px;
 }
 
 .dropdown {
-  width: 40px;
+  width: 45px;
   height: 25px;
   border: 1px solid #999;
   font-size: 15px;
@@ -154,117 +135,74 @@ th {
   display: none;
 }
 
+/* .logo {
+  width: 125px;
+  height: 98px;
+  margin: 10px;
+} */
+
+/* .sandwich,
+.logo-text {
+  display: none;
+} */
+
+/* .full-cart {
+  display: flex;
+} */
+
+/* #itm-count {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 21px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18pt;
+} */
+
+/* .cart {
+  align-self: center;
+  padding-right: 20px;
+  height: 40px;
+  width: 45px;
+} */
+
+/* .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+} */
+
 @media only screen and (min-width: 768px) {
-  .logo {
-    width: 125px;
-    height: 98px;
-    padding: 13px;
-  }
   
-  .sandwich,
-  .logo-text {
-    display: none;
-  }
-  
-  .full-cart {
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-start;
-    align-items: center;
-  }
-  
-  #itm-count {
-    position: absolute;
-    margin-top: 24px;
-    margin-left: 21px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 18pt;
-  }
-  
-  .cart {
-    align-self: center;
-    height: 40px;
-    width: 45px;
-  }
-  
-  h2 {
-    font-size: 20pt;
-    font-style: comic sans;
-  }
-  
-  .order-form img {
+  .sandwich {
+    display: block;
     width: 150px;
-    margin: 0 15px 10px 0;
-  }
-  
-  .sandwiches,
-  .sides,
-  .drinks {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  
-  .item {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    font-size: 14pt;
-    margin-bottom: 15px;
+    height: 94px;
+    padding: 15px;
   }
 
   .logo-text {
     display: block;
+    justify-self: center;
+    /* align-self: center; */
     width: 250px;
     height: 78px;
-  }
-
-  .order-form img {
-    width: 300px;
-    margin-right: 25px;
   }
 
   form {
     margin-left: 75px;
   }
 
-  .item {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    font-size: 14pt;
-    margin-bottom: 15px;
+  .order-form img {
+    width: 300px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .logo {
-      display: none;
-    }
-  
-    .wide-logo {
-      display: flex;
-      justify-content: column;
-    }
-  
-    .sandwich {
-      display: block;
-      width: 150px;
-      height: 94px;
-      padding: 15px;
-    }
-  
-    .logo-text {
-      display: block;
-      align-self: center;
-      width: 250px;
-      height: 78px;
-    }
-  
-    form {
-        margin-left: 75px;
-    }
-  
-    .order-form img {
-      width: 300px;
-    }
-  }}
-  
+
+  /* .logo {
+    display: none;
+  } */
+
+  /* .wide-logo {
+    display: flex;
+    align-items: center;
+  } */
+}
