@@ -19,36 +19,37 @@ itemCount.innerText = totalQty;
 // function to loop through and provide menu selections
 checkout.addEventListener('click',function(e){
     e.preventDefault();
-let orderItems = [];
+    let orderItems = [];
+    // toggle hiding the first section when submit is clicked 
+    const hideForm=document.querySelector(".order-form"); 
+    hideForm.classList.toggle("hidden");
+    const summary = document.querySelector(".summary");
+    const h2 = document.createElement('h2');
+    h2.innerText = "Order Summary";
+    summary.append(h2);
     let itemQty = document.getElementsByClassName("dropdown");
-   // for (let i = 0; i < itemQty.length; i++) {
-      
-        
-     //   if (itemQtyNumber > 0) {
-     //       orderItems += [orderMenuItems[i].name, orderMenuItems[i].description, orderMenuItems[i].price, itemQtyNumber];
-     //       totalQty += parseInt(itemQtyNumber); // Stacey
-     //   }
-     //   itemCount.innerText = totalQty;
-   // } 
     for (let i = 0; i < itemQty.length; i++){
+        
         let orderMenuItems = menuItems;
         let itemQtyNumber = itemQty[i].options[itemQty[i].selectedIndex].text;
         if (itemQtyNumber > 0){
         const summaryDiv = document.createElement('div');
-        const h2 = document.createElement('h2');
-        h2.innerText = "Order Summary";
+       
         //h2.classList.add('summary');
-        summaryDiv.append(h2);
+       
         //summaryDiv.classList.add('h2');
         //summaryDiv.innerText = "Order Summary";
         summaryDiv.classList.add('Item');
-        summaryDiv.innerHTML += orderMenuItems[i].name;
+        summaryDiv.innerHTML+="Item";
+        summaryDiv.innerHTML += orderMenuItems[i].name; 
         summaryDiv.classList.add('Quantity');
+        summaryDiv.innerHTML+="Quantity";
         summaryDiv.innerHTML += itemQtyNumber;
         summaryDiv.classList.add('Price');
+        summaryDiv.innerHTML+="Price";
         summaryDiv.innerHTML += itemQtyNumber * orderMenuItems[i].price;
          
-        document.querySelector(".summary").appendChild(summaryDiv);
+        summary.appendChild(summaryDiv);
         }
   
       }
