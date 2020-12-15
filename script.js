@@ -17,21 +17,47 @@ const itemCount = document.querySelector("#itm-count");
 itemCount.innerText = totalQty;
 
 // function to loop through and provide menu selections
-function getSelectedItems () {
-    let orderMenuItems = menuItems;
-    let orderItems = [];
+checkout.addEventListener('click',function(e){
+    e.preventDefault();
+let orderItems = [];
     let itemQty = document.getElementsByClassName("dropdown");
-    for (let i = 0; i < itemQty.length; i++) {
+   // for (let i = 0; i < itemQty.length; i++) {
+      
+        
+     //   if (itemQtyNumber > 0) {
+     //       orderItems += [orderMenuItems[i].name, orderMenuItems[i].description, orderMenuItems[i].price, itemQtyNumber];
+     //       totalQty += parseInt(itemQtyNumber); // Stacey
+     //   }
+     //   itemCount.innerText = totalQty;
+   // } 
+    for (let i = 0; i < itemQty.length; i++){
+        let orderMenuItems = menuItems;
         let itemQtyNumber = itemQty[i].options[itemQty[i].selectedIndex].text;
-        if (itemQtyNumber > 0) {
-            orderItems += [orderMenuItems[i].name, orderMenuItems[i].description, orderMenuItems[i].price, itemQtyNumber];
-            totalQty += parseInt(itemQtyNumber); // Stacey
+        if (itemQtyNumber > 0){
+        const summaryDiv = document.createElement('div');
+        summaryDiv.classList.add('Item');
+        //coinDiv.style.backgroundColor = coinColour;
+        //coinDiv.className = 'circles'+index;
+        summaryDiv.innerHTML = orderMenuItems[i].name;
+        summaryDiv.classList.add('Quantity');
+        summaryDiv.innerHTML += itemQtyNumber;
+        summaryDiv.classList.add('Price');
+        summaryDiv.innerHTML += itemQtyNumber * orderMenuItems[i].price;
+
+    
+
+        //document.body.appendChild(coinDiv);
+        document.querySelector(".summary").appendChild(summaryDiv);
         }
-        itemCount.innerText = totalQty;
-    }
-    console.log(totalQty); //Stacey
-    return (orderItems);
-}
+  
+      }
+
+    //.console.log(totalQty); //Stacey
+    //return (orderItems);
+
+});
+ 
+    
 
 
 // const orderForm = document.getElementByClass('.order-form'); {//change 'order-form' to '.order-form'
