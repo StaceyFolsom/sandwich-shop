@@ -104,7 +104,7 @@ button {
 }
 
 .dropdown-wide {
-  width: 80px;
+  width: 90px;
   height: 25px;
   border: 1px solid #999;
   font-family: "Open Sans", sans-serif;
@@ -183,12 +183,32 @@ th {
   display: none;
 }
 
-#card-payment-elements, #cash-tendered {
+#card-payment-elements, #cash-tendered, .payment {
   display: none;
 }
 
 .pay label {
   margin-bottom: 5px;
+}
+
+#cvv-field {
+  margin-right: 35px;
+}
+
+.ccdetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.all-payment-content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;;
+}
+
+.payment button {
+  align-items: flex-start;
+  justify-self: center;
 }
 
 /* .logo {

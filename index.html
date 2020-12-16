@@ -58,6 +58,7 @@
                   <option class="blt" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="blt" value="0">0</option>
                   <option class="blt" value="1">1</option>
                   <option class="blt" value="2">2</option>
                   <option class="blt" value="3">3</option>
@@ -77,6 +78,7 @@
                   <option class="caprese" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="caprese" value="0">0</option>
                   <option class="caprese" value="1">1</option>
                   <option class="caprese" value="2">2</option>
                   <option class="caprese" value="3">3</option>
@@ -96,6 +98,7 @@
                   <option class="pbj" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="pbj" value="0">0</option>
                   <option class="pbj" value="1">1</option>
                   <option class="pbj" value="2">2</option>
                   <option class="pbj" value="3">3</option>
@@ -116,6 +119,7 @@
                   <option class="tc" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="tc" value="0">0</option>
                   <option class="tc" value="1">1</option>
                   <option class="tc" value="2">2</option>
                   <option class="tc" value="3">3</option>
@@ -141,6 +145,7 @@
                   <option class="chips" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="chips" value="0">0</option>
                   <option class="chips" value="1">1</option>
                   <option class="chips" value="2">2</option>
                   <option class="chips" value="3">3</option>
@@ -163,6 +168,7 @@
                   <option class="cookie" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="cookie" value="0">0</option>
                   <option class="cookie" value="1">1</option>
                   <option class="cookie" value="2">2</option>
                   <option class="cookie" value="3">3</option>
@@ -189,6 +195,7 @@
                   <option class="cola" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="cola" value="0">0</option>
                   <option class="cola" value="1">1</option>
                   <option class="cola" value="2">2</option>
                   <option class="cola" value="3">3</option>
@@ -208,6 +215,7 @@
                   <option class="diet" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="diet" value="0">0</option>
                   <option class="diet" value="1">1</option>
                   <option class="diet" value="2">2</option>
                   <option class="diet" value="3">3</option>
@@ -227,6 +235,7 @@
                   <option class="sprite" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="sprite" value="0">0</option>
                   <option class="sprite" value="1">1</option>
                   <option class="sprite" value="2">2</option>
                   <option class="sprite" value="3">3</option>
@@ -246,6 +255,7 @@
                   <option class="lemonade" value="" selected disabled hidden>
                     0
                   </option>
+                  <option class="lemonade" value="0">0</option>
                   <option class="lemonade" value="1">1</option>
                   <option class="lemonade" value="2">2</option>
                   <option class="lemonade" value="3">3</option>
@@ -272,6 +282,7 @@
     </section> -->
     <section class="summary"></section>
     <section class="payment">
+      <div class="all-payment-content">
       <form class="pay">
         <h2>PAYMENT</h2>
         <div class="form-group" id="payment-type">
@@ -285,6 +296,7 @@
           <label for="cardNumber">Card Number</label>
           <input type="text" class="form-control" id="cardNumber">
       </div>
+      <div class="ccdetails">
       <div class="form-group" id="cvv-field">
         <label for="cvv">CVV</label>
         <input type="text" class="form-control" id="cvv">
@@ -292,20 +304,22 @@
       <div class="form-group" id="expiration-date">
           <label>Expiration Date</label>
           <select class="dropdown-wide">
-              <option value="01">January</option>
-              <option value="02">February </option>
-              <option value="03">March</option>
-              <option value="04">April</option>
-              <option value="05">May</option>
-              <option value="06">June</option>
-              <option value="07">July</option>
-              <option value="08">August</option>
-              <option value="09">September</option>
+              <option value="" selected disabled hidden></option>
+              <option value="1">January</option>
+              <option value="2">February </option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
               <option value="10">October</option>
               <option value="11">November</option>
               <option value="12">December</option>
           </select>
           <select class="dropdown-wide">
+              <option value="" selected disabled hidden></option>
               <option value="20"> 2020</option>
               <option value="21"> 2021</option>
               <option value="22"> 2022</option>
@@ -315,11 +329,16 @@
           </select>
       </div>
     </div>
+      </div>
       <div class="form-group" id="cash-tendered">
         <label for="cashAmount">Cash Payment Amount</label>
         $ <input type="text" class="form-control" id="cashAmount">
     </div>
       </form>
+      <button class="makepayment" id="makepayment">
+        Take My Money
+      </button>
+    </div>
     </section>
     <section class="receipt"></section>
 
