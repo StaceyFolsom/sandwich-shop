@@ -275,16 +275,17 @@
       <form class="pay">
         <h2>PAYMENT</h2>
         <div class="form-group" id="payment-type">
-          <input type="radio" class="form-control" id="cc-pmt" name="pmt-type" value="credit" checked>
+          <input type="radio" class="form-control" id="cc-pmt" onclick="javascript:cashOrCredit();" name="pmt-type" value="credit">
           <label for="cc-pmt">Credit Card</label>
-          <input type="radio" class="form-control" id="cash-pmt" name="pmt-type" value="cash">
+          <input type="radio" class="form-control" id="cash-pmt" onclick="javascript:cashOrCredit();" name="pmt-type" value="cash">
           <label for="cash-pmt">Cash</label>
         </div>  
-      <div class="form-group" id="card-number-field">
+      <div id="card-payment-elements">
+        <div class="form-group" id="card-number-field">
           <label for="cardNumber">Card Number</label>
           <input type="text" class="form-control" id="cardNumber">
       </div>
-      <div class="form-group">
+      <div class="form-group" id="cvv-field">
         <label for="cvv">CVV</label>
         <input type="text" class="form-control" id="cvv">
     </div>
@@ -313,6 +314,7 @@
               <option value="25"> 2025</option>
           </select>
       </div>
+    </div>
       <div class="form-group" id="cash-tendered">
         <label for="cashAmount">Cash Payment Amount</label>
         $ <input type="text" class="form-control" id="cashAmount">

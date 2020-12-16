@@ -183,6 +183,14 @@ th {
   display: none;
 }
 
+#card-payment-elements, #cash-tendered {
+  display: none;
+}
+
+.pay label {
+  margin-bottom: 5px;
+}
+
 /* .logo {
   width: 125px;
   height: 98px;

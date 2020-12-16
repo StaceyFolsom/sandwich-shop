@@ -60,6 +60,16 @@ let orderItems = [];
     //return (orderItems);
 
 });
+
+function cashOrCredit() {
+    if (document.getElementById('cc-pmt').checked) {
+        document.getElementById('card-payment-elements').style.display = 'block';
+        document.getElementById('cash-tendered').style.display = 'none';
+    }
+    else if (document.getElementById('cash-pmt').checked) {
+        document.getElementById('card-payment-elements').style.display = 'none';
+        document.getElementById('cash-tendered').style.display = 'block';
+}};
  
     
 
