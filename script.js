@@ -14,7 +14,7 @@ const menuItems = [
 
 
 checkout.addEventListener("click", function (e) {
-  const hideForm = document.querySelector(".order-form");
+  let hideForm = document.querySelector(".order-form");
   document.querySelector(".payment").style.display = 'flex';
   hideForm.classList.toggle("hidden");
   e.preventDefault();
@@ -67,3 +67,31 @@ function cashOrCredit() {
         document.getElementById('card-payment-elements').style.display = 'none';
         document.getElementById('cash-tendered').style.display = 'block';
 }};
+
+makepayment.addEventListener("click", function (e) {
+    document.querySelector(".summary").style.display = 'none';
+    document.querySelector(".payment").style.display = 'none';
+    e.preventDefault();
+    let orderItems = [];
+    let itemQty = document.getElementsByClassName("dropdown");
+    const receiptDiv = document.createElement("div");
+    const h2 = document.createElement("h2");
+          let totalQty = 0;
+          let totalCost = 0;
+    h2.innerText = "ORDER CONFIRMATION";
+    receiptDiv.append(h2);
+    for (let i = 0; i < itemQty.length; i++) {
+      let orderMenuItems = menuItems;
+      let itemQtyNumber = itemQty[i].options[itemQty[i].selectedIndex].text;
+      if (itemQtyNumber > 0) {
+        receiptDiv.classList.add("Item");
+        receiptDiv.innerHTML += orderMenuItems[i].name;
+        receiptDiv.classList.add("Quantity");
+        receiptDiv.innerHTML += itemQtyNumber;
+        receiptDiv.classList.add("Price");
+        receiptDiv.innerHTML += orderMenuItems[i].price;
+        totalCost += parseFloat(orderMenuItems[i].price * itemQtyNumber);
+        totalQty += parseInt(itemQtyNumber);
+      }
+      document.querySelector(".receipt").appendChild(receiptDiv);
+    }});
