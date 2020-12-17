@@ -12,7 +12,6 @@ const menuItems = [
   ]
 
 
-<<<<<<< HEAD
 // function to loop through and provide menu selections
 checkout.addEventListener('click',function(e){
     e.preventDefault();
@@ -50,8 +49,6 @@ checkout.addEventListener('click',function(e){
         }
   
       }
-=======
->>>>>>> e8560cee86a1948de06e662a2dd8dab2e9c1b7d3
 
 checkout.addEventListener("click", function (e) {
   let hideForm = document.querySelector(".order-form");
