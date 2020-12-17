@@ -1,25 +1,21 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
 .header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #fac601;
+  background-color: #FAC601;
 }
-
 h2 {
   font-size: 20pt;
 }
-
 .sandwiches,
 .sides,
 .drinks {
   display: flex;
   flex-flow: column nowrap;
 }
-
 .item {
   display: flex;
   flex-flow: row nowrap;
@@ -27,56 +23,48 @@ h2 {
   font-size: 12pt;
   margin-bottom: 15px;
 }
-
 .order-form img {
   width: 150px;
   margin-right: 15px;
 }
-
 .sandwiches div,
 .sides div,
 .drinks div {
   display: flex;
   align-items: center;
 }
-
 label {
   display: flex;
   flex-flow: column wrap;
   /* font-size: 20px; */
 }
-
 .wide-logo {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-
 .sandwich {
   display: block;
   width: 100px;
   height: 63px;
   padding: 15px;
 }
-
 .logo-text {
   display: block;
   align-self: center;
   width: 200px;
   height: 62px;
 }
-
 button {
   font-family: "Bebas Neue", sans-serif;
   font-size: large;
-  background-color: #fac601;
+  background-color: #FAC601;
   border: none;
   border-radius: 4px;
   padding: 10px;
   margin: 20px auto;
   width: 200px;
 }
-
 .sandwich-qty {
   max-width: 90%;
   height: 100%;
@@ -85,14 +73,12 @@ button {
   padding: 20px;
   font-size: 10em;
 }
-
 /* Changed form to .order here and added class in index to separate styles for payment form */
 .order, .pay {
   display: flex;
   flex-direction: column;
   margin: 10px 25px;
 }
-
 .dropdown {
   width: 45px;
   height: 25px;
@@ -102,7 +88,6 @@ button {
   background-color: #eee;
   margin-right: 5px;
 }
-
 .dropdown-wide {
   width: 90px;
   height: 25px;
@@ -112,65 +97,53 @@ button {
   background-color: #eee;
   margin-right: 5px;
 }
-
 .pay div {
   margin-bottom: 10px;
 }
-
 #cardNumber {
   width: 300px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
 }
-
 #cvv, #cashAmount {
   width: 75px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
 }
-
 #payment-type {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
 }
-
 #payment-type label {
   margin-right: 25px;
   align-self: baseline;
 }
-
 #payment-type input {
   margin-right: 8px;
   align-self: baseline;
 }
-
 .form-group {
   font-size: 12pt;
 }
-
 .orderSummaryTable {
   table-layout: auto;
   width: 90%;
   text-align: left;
   margin-left: 5%;
 }
-
 th,
 td {
   padding-left: 12px;
 }
-
 th {
   font-size: 14pt;
   font-weight: 18px;
 }
-
 .proceedPayment {
   display: block;
   margin: 0 auto;
 }
-
 .paymentDetailLabels {
   text-align: right;
   margin-right: 15%;
@@ -178,54 +151,76 @@ th {
   font-size: 14pt;
   font-weight: 18px;
 }
-
 .hidden {
   display: none;
 }
 
+.orderHeader,
+.detailRow,
+.totalRow, .taxRow, .finalPriceRow
+{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 30px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+#hdr,
+#dtlRow,
+#totlRow,
+#hdr2,
+#dtlRow2,
+#totlRow2 {
+width:100px;
+}
+
+#totlRow,
+#totlRow2{
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 10px;
+  border-top: 2px dotted #ccc;
+}
+#hdr{
+    font-size: 16pt;
+    font-weight: 18px;
+  }
 #card-payment-elements, #cash-tendered, .payment {
   display: none;
 }
-
 .pay label {
   margin-bottom: 5px;
 }
-
 #cvv-field {
   margin-right: 35px;
 }
-
 .ccdetails {
   display: flex;
   flex-direction: row;
 }
-
 .all-payment-content {
   display: flex;
   flex-direction: column;
   width: 100vw;;
 }
-
 .payment button {
   align-items: flex-start;
   justify-self: center;
 }
-
 /* .logo {
   width: 125px;
   height: 98px;
   margin: 10px;
 } */
-
 /* .sandwich,
 .logo-text {
   display: none;
 } */
-
 /* .full-cart {
   display: flex;
 } */
-
 /* #itm-count {
   position: absolute;
   margin-top: 24px;
@@ -233,30 +228,25 @@ th {
   font-family: "Bebas Neue", sans-serif;
   font-size: 18pt;
 } */
-
 /* .cart {
   align-self: center;
   padding-right: 20px;
   height: 40px;
   width: 45px;
 } */
-
 /* .buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 20px 0;
 } */
-
 @media only screen and (min-width: 768px) {
-  
   .sandwich {
     display: block;
     width: 150px;
     height: 94px;
     padding: 15px;
   }
-
   .logo-text {
     display: block;
     justify-self: center;
@@ -264,15 +254,12 @@ th {
     width: 250px;
     height: 78px;
   }
-
   .order, .pay {
     margin-left: 75px;
   }
-
   .order-form img {
     width: 300px;
   }
-
   .item {
     display: flex;
     flex-flow: row nowrap;
@@ -280,15 +267,12 @@ th {
     font-size: 14pt;
     margin-bottom: 15px;
   }
-
   .form-group {
     font-size: 14pt;
   }
-
   /* .logo {
     display: none;
   } */
-
   /* .wide-logo {
     display: flex;
     align-items: center;
