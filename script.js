@@ -1,5 +1,4 @@
 const menuItems = [
-<<<<<<< HEAD
   {
     name: "BLT",
     group: "sandwich",
@@ -61,22 +60,7 @@ const menuItems = [
     price: 3.25,
   },
 ];
-// function to loop through and provide menu selections
-=======
-    { name: "BLT", group: "sandwich", description: "Bacon, consttucs, & tomato", price: 5.00},
-    { name: "Caprese", group: "sandwich", description: "Mozzarella, tomato, & basil", price: 7.50},
-    { name: "PBJ", group: "sandwich", description: "Peanut butter & jelly time!", price: 3.50},
-    { name: "Turkey Club", group: "sandwich", description: "Turkey, swiss, lettuce, & tomato", price: 8.50},
-    { name: "Chips", group: "sides", description: "Homemade kettle baked cajun seasoned chips - best in town!", price: 2.50},
-    { name: "Chocolate Chip Cookie", group: "sides", description: "Fresh chocolate chip cookies, as good as your mom makes", price: 2.50},
-    { name: "Cola", group: "drinks", description: "You know the deal", price: 2.50},
-    { name: "Diet Cola", group: "drinks", description: "You on a diet?", price: 2.50},
-    { name: "Sprite", group: "drinks", description: "Lemon-Lime greatness!", price: 2.50},
-    { name: "Lemonade", group: "drinks", description: "Fresh squeezed lemonade", price: 3.25},
-  ]
 
-
-<<<<<<< HEAD
 // function to loop through and provide menu selections
 checkout.addEventListener('click',function(e){
     e.preventDefault();
@@ -114,10 +98,7 @@ checkout.addEventListener('click',function(e){
         }
   
       }
-=======
->>>>>>> e8560cee86a1948de06e662a2dd8dab2e9c1b7d3
 
->>>>>>> main
 checkout.addEventListener("click", function (e) {
   e.preventDefault();
   let orderItems = [];
